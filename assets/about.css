@@ -36,7 +36,7 @@ section{
     position: fixed;
     top:0; left:0; right:0;
     width: 100%;
-    padding:2rem 9%;
+    padding:0 9%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,6 +49,41 @@ section{
     color: var(--text-color);
     font-weight: 700;
     cursor: pointer;
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.3rem;
+    height: 2.3rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    color: var(--main-color);
+    font-size: 1.1rem;
+    border-radius: 50%;
+    margin: 2rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover{
+    background: var(--main-color);
+    color: var(--snd-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: var(--main-color);
+    color: var(--snd-bg-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 5rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    transition: .5s ease;
+}
+.btn:hover{
+    background: none;
 }
 .about{
     display: flex;
@@ -65,7 +100,20 @@ section{
     font-size: 3.6rem;
     font-weight: 700;
     margin: 0 0 2rem 0;
-    color: var(--main-color);
+    color: var(--text-color);
+}
+.about-content h1 span{
+    background: linear-gradient(to right, #008baa, #7e42a7, #6600c5, #6070fd, #2a46ff, #0099ff, #008ead);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 3.5s linear infinite;
+}
+@keyframes animate-gradient{
+    to{
+        background-position: 200%;
+    }
 }
 
 .about-content > div:first-child{

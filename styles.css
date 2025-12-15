@@ -89,7 +89,17 @@ section{
 }
 
 span{
-    color:var(--main-color);
+    background: linear-gradient(to right, #008baa, #7e42a7, #6600c5, #6070fd, #2a46ff, #0099ff, #008ead);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 3.5s linear infinite;
+}
+@keyframes animate-gradient{
+    to{
+        background-position: 200%;
+    }
 }
 .home-content h1{
     font-size: 5.6rem;
@@ -288,15 +298,23 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     background: var(--text-color);
     border-radius: 50%;
 }
 
 .portfolio-layer a i{
-    font-size: 4rem;
-    color: var(--snd-bg-color);
+    width: 15px;
+    height: 15px;
+    background-color: transparent; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #007BFF; 
+    font-size: 12px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1)
 }
 .contact h2{
     margin-bottom: 3rem;
